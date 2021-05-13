@@ -1,6 +1,7 @@
 # learning_flutter
 
-A new Flutter project.
+- Learning flutter from Jawan Tech PK
+- A new Flutter project.
 
 ## Getting Started
 
