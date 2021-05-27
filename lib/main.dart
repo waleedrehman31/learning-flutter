@@ -14,12 +14,38 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Center(
-            child: Text("Login"),
+            child: Text(
+              "LOGIN",
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         ),
         body: Center(
           child: Column(
             children: [
+              SizedBox(
+                height: 2,
+              ),
+              Container(
+                width: double.infinity,
+                height: 50,
+                color: Colors.blue,
+                child: Center(
+                  child: Text(
+                    "WELCOME TO FLUTTER LOGIN PAGE",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      wordSpacing: 6,
+                    ),
+                  ),
+                ),
+              ),
               SizedBox(
                 height: 50,
               ),
