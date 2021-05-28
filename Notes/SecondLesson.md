@@ -4,7 +4,7 @@
 
 - Body have many widget `Text()`, `Column()`, `Row()` and `Container()` etc.
 
-```
+```dart
 // For Column
 body: Column(
     children: [
@@ -26,7 +26,7 @@ body: Column(
 ),
 ```
 
-```
+```dart
 // For Row
 body: Row(
     children: [
@@ -75,7 +75,7 @@ body: Row(
     - `.Spacearound` For get space its own every thing
     - `.SpaceEvenly` For equaly space its own every thing
 
-```
+```dart
 body: Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
@@ -90,7 +90,7 @@ body: Row(
 - For `Row` `MainAxisAlignment` direction `(left => right)` and `CrossAxisAlignment` direction `(top => bottom)`
 - For `Column` `MainAxisAlignment` direction `(top => bottom)` and `CrossAxisAlignment` direction `(left => right)`
 
-```
+```dart
 // Example code
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -122,8 +122,7 @@ class MyApp extends StatelessWidget {
 - Center Widget `body: Center(),` makes every thing center
 - Scroll Widget `body: SingleChildScrollView(),` makes page scroll able
 
-```
-
+```dart
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -182,7 +181,7 @@ class MyApp extends StatelessWidget {
 
 - Create login form
 
-```
+```dart
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
