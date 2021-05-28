@@ -4,7 +4,7 @@
 
 - Basic Syntax is
 
-```
+```dart
 import 'package:flutter/material.dart'; // Its Import the Flutter package
 void main() {
   runApp(MyApp()); // Calling class in main function
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {  // this is stateless widget
 
 - The return have `MaterialApp()` and MaterialApp() have `Scaffold()` and Scaffold have `Body()` and `appBar()`
 
-```
+```dart
 return MaterialApp(
     home: Scaffold(
      body: Text("Hello"),
