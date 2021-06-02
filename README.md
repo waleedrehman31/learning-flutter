@@ -1,9 +1,24 @@
+![Flutter Header](http://pasinfotech.com/wp-content/uploads/2019/06/flutter-banner.jpg)
+
 # learning_flutter
 
 - Learning flutter from Jawan Tech PK
 - A new Flutter project.
+## Note
+- Every thing that i learn all in *Notes* directory or link given below.
+- [Lesson One](https://github.com/waleedrehman31/learning-flutter/blob/master/Notes/FirstLesson.md)
+- [Lesson Two](https://github.com/waleedrehman31/learning-flutter/blob/master/Notes/SecondLesson.md)
 
-## Getting Started
+## Screen Shot
+- All the screen shot is available in *Screen Shot* directory
+- [Lesson One/ Assignment one SS](https://github.com/waleedrehman31/learning-flutter/blob/master/ScreenShots/Lesson%201%20Screen%20Shot.PNG)
+- [Lesson Two / Login Page SS](https://github.com/waleedrehman31/learning-flutter/blob/master/ScreenShots/LessonTwo.jpeg)
+   - [Loggin Page/ Modified](https://github.com/waleedrehman31/learning-flutter/blob/master/ScreenShots/LessonTwo.jpeg) 
+
+---
+
+## Flutter Default README.md
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
