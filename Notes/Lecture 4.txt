@@ -1,0 +1,113 @@
+# Lesson 4
+-In this lesson we learn advance widget of flutters
+
+## We study `ListView` It also take children like column, row and staet.
+
+```dart
+body: ListView(
+        children: [
+          Container(),
+        ],
+      ),
+```
+
+```dart
+ListView(
+        children: [
+          Container(
+            color: Colors.yellow,
+            height: 100,
+            child: Row(
+              children: [
+                Container(
+                  color: Colors.blueAccent,
+                  height: 95,
+                  width: 90,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+```
+
+## Solution of assingment 5
+
+```dart
+ListView(
+        children: [
+          Container(
+            color: Colors.yellow,
+            height: 100,
+            child: Row(
+              children: [
+                Container(
+                  color: Colors.blueAccent,
+                  height: 95,
+                  width: 90,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 10.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Hello"),
+                      Row(
+                        children: [
+                          Text("Hello"),
+                          Text("Hello"),
+                        ],
+                      ),
+                      Icon(Icons.notifications),
+                      Text("Hello"),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+```
+
+
+-Widget Parameter
+
+```dart
+return Scaffold(
+      body: ListView(
+        children: [
+          ABC("Waleed"),
+          ABC("Waleed"),
+          ABC("Waleed"),
+        ],
+      ),
+    );
+Widget ABC(name) {
+  return Container(
+    color: Colors.yellow,
+    height: 100,
+    child: Row(
+      children: [
+        Container(
+          color: Colors.blueAccent,
+          height: 95,
+          width: 90,
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 10.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(name),
+            ],
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
+```
+
+- `ListView.Builder 
