@@ -55,3 +55,60 @@ Positioned(
           ),
 ```
 
+if we use alignment in flutter than we don't use any column and children
+- We use Alignment in Align widget
+- gradient are also use in it.
+```dart
+gradient: LinearGradient(
+              colors: [
+                Colors.redAccent,
+                Colors.yellowAccent,
+              ],
+            ),
+```
+
+-  If ypu use hex value of color so you follow the code given below `color: Color(0xff-yourhexcode-)
+```dart
+color: Color(0xff1d1f21),
+```
+- You can also style `Text` in flutter like this 
+
+```dart
+Center(
+            child: Text(
+              "BOX DECORATION",
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+```
+
+- You can create avatar in two ways both are given below
+
+```dart
+CircleAvatar(
+          radius: 50,
+          backgroundImage: NetworkImage(
+              'https://cdn.pixabay.com/photo/2018/03/21/16/50/woman-3247382__340.jpg'),
+        ),
+```
+
+- in second way you need to create new folder called `assets` and download image in it.
+- now goto `pupsec.yaml` file and and un comment the `assets: and the path of images`
+
+### Stack
+- `Stack` also have children after `rows` and `column`
+
+` and we use `Positioned` widget in stack
+```dart
+Positioned(
+            child: Container(
+              margin: EdgeInsets.all(50),
+              height: 100,
+              width: 100,
+              color: Colors.redAccent,
+            ),
+          ),
+```
+
