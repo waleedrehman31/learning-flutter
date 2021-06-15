@@ -110,4 +110,95 @@ Widget ABC(name) {
 
 ```
 
-- `ListView.Builder 
+- `ListView.Builder` is an other advance filter.
+---dart
+ListView.builder(
+        itemCount: lst.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(lst[index]),
+            subtitle: Text(age[index]),
+          );
+        },
+      ),
+```
+
+- List builder is important
+## `Grid-view` and `GridBilder`
+
+```dart
+GridView.count(
+        crossAxisCount: 2,
+        crossAxisSpacing: 50,
+        mainAxisSpacing: 50,
+        children: List.generate(
+          lst.length,
+          (index) {
+            return Container(
+              color: Colors.yellow,
+              child: Text(lst[index]),
+            );
+          },
+        ),
+      ), 
+```
+
+- DRAWER Example
+
+```daer
+appBar: AppBar(
+        title: Text("Flutter Drawer"),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+              child: Container(
+                child: Image.network(
+                    "https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"),
+              ),
+            ),
+            ListTile(
+              title: Text("ABC"),
+            ),
+            GestureDetector(
+              onTap: () {},
+              child: ListTile(
+                title: Text("ABC"),
+              ),
+            ),
+            ListTile(
+              title: Text("ABC"),
+            ),
+          ],
+        ),
+      ),
+```
+
+
+## TabBar View
+- tab Bar view codding
+
+```dart
+return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        appBar: AppBar(
+          title: TabBar(
+            tabs: [
+              Tab(
+                child: Text("Login"),
+              ),
+              Tab(
+                child: Text("Registration"),
+              ),
+            ],
+          ),
+        ),
+        body: TabBarView(children: [
+          LoginPage(),
+          RigesterPage(),
+        ]),
+      ),
+    );
+```
